@@ -1149,3 +1149,28 @@ text-transform: uppercase;
 
 color: var(--h1-color);
 }
+
+.input {
+    position: block;
+    width: 448px;
+height: 40px;
+left: 576px;
+top: 314px;
+border: 1px solid rgba(33, 33, 33, 0.2);
+box-sizing: border-box;
+border-radius: 4px;
+margin-bottom: 10px;
+}
+
+.form-text{
+    font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 14px;
+/* identical to box height */
+
+letter-spacing: 0.01em;
+
+color: #757575;
+}
