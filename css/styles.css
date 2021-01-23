@@ -1103,74 +1103,150 @@ background-image:linear-gradient(
     border-radius: 4px;
     margin-left: 12px;
     }
+
 .subscribe-svg{
     padding-left: 10px;
-}
+    }
 
 .footer-subscribe-container{
     display: flex;
     margin-top: 20px;
-}
+    }
 
 .footer-subscribe-input{
     width: 358px;
-height: 50px;
-left: 815px;
-top: 2785px;
+    height: 50px;
+    left: 815px;
+    top: 2785px;
 
-border: 1px solid rgba(255, 255, 255, 0.3);
-box-sizing: border-box;
-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-border-radius: 4px;
-background: #2F303A;
-padding-left: 16px;
-font-family: Roboto;
-font-style: normal;
-font-weight: normal;
-font-size: 16px;
-line-height: 20px;
-/* identical to box height, or 125% */
-
-display: flex;
-align-items: center;
-letter-spacing: 0.03em;
-
-color: rgba(255, 255, 255, 0.6);
-}
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background: #2F303A;
+    padding-left: 16px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1,25;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    }
 
 .footer-social-networks-title{
     font-family: Roboto;
-font-style: normal;
-font-weight: bold;
-font-size: 14px;
-line-height: 16px;
-letter-spacing: 0.03em;
-text-transform: uppercase;
-
-color: var(--h1-color);
-}
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--h1-color);
+    }
 
 .input {
     position: block;
     width: 448px;
-height: 40px;
-left: 576px;
-top: 314px;
-border: 1px solid rgba(33, 33, 33, 0.2);
-box-sizing: border-box;
-border-radius: 4px;
-margin-bottom: 10px;
-}
+    height: 40px;
+    left: 576px;
+    top: 314px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    box-sizing: border-box;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    margin-top: 4px;
+    padding: 0px;
+    padding-left: 42px;
+
+    }
 
 .form-text{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 1,2;
+    letter-spacing: 0.01em;
+    color: #757575;
+
+    }
+
+textarea{
+ resize: none;   
+ width: 448px;
+ height: 120px;
+     border: 1px solid rgba(33, 33, 33, 0.2);
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding: 12px;
+
+}
+
+.form-placeholder{
+
     font-family: Roboto;
 font-style: normal;
 font-weight: normal;
 font-size: 12px;
 line-height: 14px;
-/* identical to box height */
-
 letter-spacing: 0.01em;
+margin-top: 4px;
+margin-bottom: 20px;
 
-color: #757575;
+
+color: rgba(117, 117, 117, 0.5);
+}
+
+.checkbox-agreement-link{
+    display: inline-block;
+}
+
+.checkbox-agreement{
+    margin-bottom: 30px;
+}
+
+.form-button{
+    margin-bottom: 40px;
+}
+
+.form-container{
+    position: relative;
+}
+.icon{
+    display: inline-block;
+top: 32px;
+left: 11px;
+position: absolute;
+}
+
+.input:focus ~ .icon,
+.input:hover ~ .icon{
+fill: #2196F3;
+}
+
+.input:focus,
+.input:hover {
+border: 1px solid #2196F3;
+}
+
+/*.checkbox{
+
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+}*/
+
+.checkbox-icon{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #212121;
+}
+
+.checkbox:cheked + .checkbox-icon{
+    background-color:blue;
+    border-radius: 10px;
 }
