@@ -1048,21 +1048,28 @@ background-image:linear-gradient(
     left: 700px;
     top: 712px;
     background: #2196F3;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
     border-radius: 4px;
     font-family: Roboto;
     font-style: normal;
     font-weight: bold;
     font-size: 16px;
     line-height: 1,87;
-
+    box-shadow:none;
     text-align: center;
     letter-spacing: 0.06em;
     color: var(--h1-color);
     border: none;
     margin-left: 124px;
     top:40px;
+    transition-property: box-shadow;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
    } 
+
+.form-button-submit:hover,
+.form-button-submit:focus{
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+}
 
 .footer-subscribe{
     margin-left: 93px;
@@ -1099,11 +1106,15 @@ background-image:linear-gradient(
     left: 1185px;
     top: 1736px;
     background: #2196F3;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    
     border-radius: 4px;
     margin-left: 12px;
     }
 
+    .footer-subsribe-button:hover,
+    .footer-subsribe-button:focus{
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    }
 .subscribe-svg{
     padding-left: 10px;
     }
@@ -1160,8 +1171,17 @@ background-image:linear-gradient(
     margin-top: 4px;
     padding: 0px;
     padding-left: 42px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    transition-property: border;
+    transition: border 250ms; cubic-bezier(0.4, 0, 0.2, 1);
 
     }
+
+.input:focus,
+.input:hover {
+    border: 1px solid #2196F3;
+    }
+
 
 .form-text{
     font-family: Roboto;
@@ -1174,10 +1194,11 @@ background-image:linear-gradient(
 
     }
 
+
 textarea{
- resize: none;   
- width: 448px;
- height: 120px;
+    resize: none;   
+    width: 448px;
+    height: 120px;
      border: 1px solid rgba(33, 33, 33, 0.2);
     box-sizing: border-box;
     border-radius: 4px;
@@ -1188,61 +1209,62 @@ textarea{
 .form-placeholder{
 
     font-family: Roboto;
-font-style: normal;
-font-weight: normal;
-font-size: 12px;
-line-height: 14px;
-letter-spacing: 0.01em;
-margin-top: 4px;
-margin-bottom: 20px;
-
-
-color: rgba(117, 117, 117, 0.5);
-}
-
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    margin-top: 4px;
+    margin-bottom: 20px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    color: rgba(117, 117, 117, 0.5);
+    }
+ 
 .checkbox-agreement-link{
     display: inline-block;
-}
+    }
 
 .checkbox-agreement{
 
     display: inline-block;        
     margin-bottom: 30px;
-}
+    }
 
 .form-button{
     margin-bottom: 40px;
-}
+    }
 
 .form-container{
     position: relative;
-}
+    }
+
 .icon{
     display: inline-block;
-top: 32px;
-left: 11px;
-position: absolute;
-}
+    top: 32px;
+    left: 11px;
+    position: absolute;
+    fill: #212121;
+    transition: fill;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
 
 .input:focus ~ .icon,
 .input:hover ~ .icon{
-fill: #2196F3;
-}
+    fill: #2196F3;
+    }
 
-.input:focus,
-.input:hover {
-border: 1px solid #2196F3;
-}
+
 
 .checkbox{
 
     -webkit-appearance: none;
        -moz-appearance: none;
             appearance: none;
-}
+    }
+
 .checkbox-container{
     position: relative;
-}
+    }
 
 .checkbox-icon{
     position: absolute;
@@ -1253,16 +1275,17 @@ border: 1px solid #2196F3;
     height: 15px;
     border: 2px solid #212121;
     border-radius: 2px;
-
 }
 
 .checkbox:checked + .checkbox-icon {
     background-color: #2196F3;
-background-image: url('./images/icon-check.svg');
-background-size: contain;
-border: 2px solid #FFFFFF;
-}
+    background-image: url('./images/icon-check.svg');
+    background-size: contain;
+    border: 2px solid #2196F3;
+    background-origin: content-box;
+
+    }
 
 .checkbox-agreement{
     margin-left: 36.38px;
-}
+    }
