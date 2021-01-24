@@ -402,7 +402,7 @@
                 </svg>
             </button>
             <span class="form-heading">Оставьте свои данные, мы вам перезвоним</span>
-            <form class="form" action="#" method="POST" enctype="multipart/form-data">
+            <form class="form" action="#" enctype="multipart/form-data">
                 <div class="form-container">
                     <label for="">
                         <span class="form-text">Имя</span>
@@ -442,17 +442,14 @@
                         <textarea class="form-placeholder" placeholder="Введите текст" id="comment" name="Comments"></textarea>
                     </label>
                 </div>
-                <div >
-                    <label class="checkbox-agreement" for="checkbox">
-                        <input type="checkbox" class="checkbox" id="checkbox">Соглашаюсь с рассылкой и принимаю 
-                        <span class="checkbox-icon">
-                            <svg width="18" height="18">
-                                <use>href="./images/symbol-defs.svg#icon-icon-check"></use>
-                            </svg>
-                        </span>
+                <div class="checkbox-container">
+                         
+                        <label class="checkbox-agreement" for="checkbox">Соглашаюсь с рассылкой и принимаю
+                            <input type="checkbox" class="checkbox" value="checkbox" id="checkbox">
+                            <span class="checkbox-icon"> </span>
+                        </label>
+                        
                         <a class="checkbox-agreement-link" href="">Условия договора</a>
-                    </label>
-                    
                 </div>
     <div class="form-button">
             <button class="form-button-submit">Отправить</button>
