@@ -1069,13 +1069,11 @@ padding-bottom: 40px;
 .form-button-submit:hover,
 .form-button-submit:focus{
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-}
+    }
 
 .footer-subscribe{
     margin-left: 93px;
-
-}
-
+    }
 
 .footer-subscribe-text{
     font-family: Roboto;
@@ -1086,7 +1084,6 @@ padding-bottom: 40px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color:var(--h1-color);
-
    }
 
 .footer-subsribe-button{
@@ -1111,10 +1108,11 @@ padding-bottom: 40px;
     margin-left: 12px;
     }
 
-    .footer-subsribe-button:hover,
-    .footer-subsribe-button:focus{
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+.footer-subsribe-button:hover,
+.footer-subsribe-button:focus{
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     }
+
 .subscribe-svg{
     padding-left: 10px;
     }
@@ -1174,14 +1172,12 @@ padding-bottom: 40px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     transition-property: border;
     transition: border 250ms; cubic-bezier(0.4, 0, 0.2, 1);
-
     }
 
 .input:focus,
 .input:hover {
     border: 1px solid #2196F3;
     }
-
 
 .form-text{
     font-family: Roboto;
@@ -1191,9 +1187,7 @@ padding-bottom: 40px;
     line-height: 1,2;
     letter-spacing: 0.01em;
     color: #757575;
-
     }
-
 
 textarea{
     resize: none;   
@@ -1217,6 +1211,13 @@ textarea{
     margin-top: 4px;
     margin-bottom: 20px;
     border: 1px solid rgba(33, 33, 33, 0.2);
+    color: rgba(117, 117, 117, 0.5);
+    transition-property: border;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+.form-placeholder:hover{
+    border: 1px solid #2196F3;
     color: rgba(117, 117, 117, 0.5);
     }
  
@@ -1253,10 +1254,7 @@ textarea{
     fill: #2196F3;
     }
 
-
-
 .checkbox{
-
     -webkit-appearance: none;
        -moz-appearance: none;
             appearance: none;
@@ -1275,17 +1273,24 @@ textarea{
     height: 15px;
     border: 2px solid #212121;
     border-radius: 2px;
-}
+    transition-property: border;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+.checkbox-agreement:hover > .checkbox-icon{
+    border: 2px solid #2196F3;
+    }
 
 .checkbox:checked + .checkbox-icon {
     background-color: #2196F3;
-    background-image: url('/images/icon-check.svg');
+    background-image: url('../images/icon-check.svg');
     background-size: contain;
+    background-position: center;
     border: 2px solid #2196F3;
     background-origin: content-box;
-
     }
 
 .checkbox-agreement{
     margin-left: 36.38px;
     }
+
