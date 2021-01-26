@@ -1010,13 +1010,11 @@ background-image:linear-gradient(
     letter-spacing: 0.03em;
     color: #212121;
     padding-top: 40px;
-    padding-right: 40px;
     padding-left: 40px;
     }
 
 .form{
     position: absolute;
-    padding-right: 40px;
     padding-left: 40px;
     padding-top: 75px;
     width: 448px;
