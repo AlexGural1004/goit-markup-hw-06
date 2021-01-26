@@ -842,9 +842,9 @@ background-image:linear-gradient(
 .footer-container{
     display: flex;
 
-    padding-top: 60px;
-    padding-right: 70px;
-    padding-bottom: 60px;
+    margin-top: 60px;
+    margin-right: 70px;
+    margin-bottom: 60px;
     }
 
 .footer-address-container{
@@ -868,6 +868,7 @@ background-image:linear-gradient(
     line-height: 1.14;
     text-transform: uppercase;
     color:var(--h1-color);
+    margin-right: 93px;
 
     }
     
@@ -969,7 +970,7 @@ background-image:linear-gradient(
 
     width: 528px;
     min-height: 581px;
-padding-bottom: 40px;
+
     top: 50%;
     left: 50%;
     background-color: var(--h1-color);
@@ -1008,20 +1009,21 @@ padding-bottom: 40px;
     text-align: center;
     letter-spacing: 0.03em;
     color: #212121;
-    margin-top: 40px;
-    margin-right: 40px;
-    margin-left: 40px;
+    padding-top: 40px;
+    padding-right: 40px;
+    padding-left: 40px;
     }
 
 .form{
     position: absolute;
-    margin-right: 40px;
-    margin-left: 40px;
-    margin-top: 75px;
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-top: 75px;
     width: 448px;
     height: 342px;
     }
-.checkbox-agreement{
+.checkbox-agreement {
+    display: inline-block; 
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
@@ -1029,6 +1031,8 @@ padding-bottom: 40px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: #757575;
+    padding-left: 36.38px;
+    padding-bottom: 30px;
     }
 
 .checkbox-agreement-link{
@@ -1072,9 +1076,7 @@ padding-bottom: 40px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     }
 
-.footer-subscribe{
-    margin-left: 93px;
-    }
+
 
 .footer-subscribe-text{
     font-family: Roboto;
@@ -1228,16 +1230,17 @@ textarea{
 
 .checkbox-agreement{
 
-    display: inline-block;        
-    margin-bottom: 30px;
+
     }
 
 .form-button{
-    margin-bottom: 40px;
+    padding-bottom: 40px;
     }
 
 .form-container{
     position: relative;
+    height: 58px;
+    padding-bottom: 10px;
     }
 
 .icon{
@@ -1290,8 +1293,3 @@ textarea{
     border: 2px solid #2196F3;
     background-origin: content-box;
     }
-
-.checkbox-agreement{
-    margin-left: 36.38px;
-    }
-
